@@ -2,6 +2,21 @@ import os
 import streamlit as st
 import google.generativeai as genai
 
+st.markdown("""
+<style>
+/* Force all sidebar buttons to be dark blue with white text */
+[data-testid="stSidebar"] .stButton > button {
+    background-color: #003366 !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255,255,255,0.3) !important;
+}
+[data-testid="stSidebar"] .stButton > button:hover {
+    border: 1px solid #ffffff !important;
+    background-color: #004488 !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
 # Page configuration
 st.set_page_config(
     page_title="VRL Logistics - AI Customer Support Assistant",
